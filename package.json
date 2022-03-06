@@ -1,0 +1,22 @@
+{
+  "name": "projekt2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivanvidic/Project2--HTML-CSS-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivanvidic/Project2--HTML-CSS-/issues"
+  },
+  "homepage": "https://github.com/Ivanvidic/Project2--HTML-CSS-#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

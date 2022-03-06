@@ -11,33 +11,110 @@
 
     <!-- Header -->
 
-    <header>
-        <div class="logo">
+    <header class="header">
+        <div class="header_logo">
             <a href="index.html"><img src="./img/Samsung-Symbol.png" alt="logo" width="500px"></a>
         </div>
-        <span>Galaxy A52s 5G</span>
-        <nav>
-            <ul class="navbar-links"> 
-                <a href="./index.html"><li>Početna</li></a>
-                <a href="./compare.html"><li>Specifikacije</li></a>
-                <a href="./compare.html"><li>Usporedi</li></a>
-                <a href="./compare.html"><li>O nama</li></a>
-            </ul>               
+        <span>Galaxy A52s 5G 2021</span>
+        <nav class="header_navigation"> 
+                <a href="./index.html" class="header_navigation--link">Početna</a>
+                <a href="#specs" class="header_navigation--link">Specifikacije</a>
+                <a href="./compare.html" class="header_navigation--link">Usporedi</a>
+                <a href="https://www.samsung.com/hr/" class="header_navigation--link">O nama</a>          
         </nav>
     </header>
 
-    <!-- Main Content -->
-     
-    <img src="./img/A52-baner.jpg" alt="Samsung Galaxy A52s 5G">
-    <section>
-        <div class="main-h2-in-section">
-          <h2>Glavne Značajke</h2>
+    <!-- Main Content --> 
+    
+    <img class="banner-img" src="./img/A52-baner.jpg" alt="">
+    <h2 id="specs" class="specs-heading">Specifikacije</h2>
+
+    <section class="specifications">
+          <div class="specifications_item">
+             <img src="./img/display.jpg" alt="">
+             <h3>Display</h3>
+             <span>6.5 inča</span>
+             <span>1080 x 2400 točaka</span>
+             <span>Super AMOLED</span>
+          </div>
+
+          <div class="specifications_item">
+            <img src="./img/CPU.jpg" alt="">
+            <h3>CPU</h3>
+            <span>Qualcomm Snapdragon 778G</span>
+            <span>8 jezgreni</span>
+            <span>2.4 GHz</span>
+          </div>
+
+          <div class="specifications_item">
+                <img src="./img/batery.jpg" alt="">
+                <h3>Baterija</h3>
+                <span>4500 mAh</span>
+                <span>Litij Ionska</span>
+          </div>
+
+          <div class="specifications_item">
+            <img src="./img/camera.jpg" alt="">
+            <h3>Kamera</h3>
+            <span>Prednja 36MP</span>
+            <span>Zadnja 64MP</span>
+          </div>
+
+          <div class="specifications_item">
+            <img src="./img/memorija.jpg" alt="">
+            <h3>RAM</h3>
+            <span>6GB</span>
+            <span>8GB</span>
+            <span>Dvokanalna</span>
+          </div>
+
+          <div class="specifications_item">
+            <img src="./img/os.jpg" alt="">
+            <h3>Operativni sustav</h3>
+            <span>Android 11</span>
+          </div>
+    </section>
+
+    <h2 class="similar-heading">Slični Uređaji</h2>
+    <section class="similar">
+        <div class="similar_item">
+            <img src="./img/similar-xiaomi-11t-pro.jpeg" alt="">
+            <h4>Xiaomi 11T Pro</h4>
+            <p>5.299,00 kn</p>
+        </div>
+
+        <div class="similar_item">
+            <img src="./img/similar-samsung-galaxy-s22-ultra.jpeg" alt="">
+            <h4>Samsung Galaxy S22 Ultra</h4>
+            <p>5.527,44 kn</p>
+        </div>
+
+        <div class="similar_item">
+            <img src="./img/similar-oneplus-10-pro-8-gb-256-gb-preto.jpeg" alt="">
+            <h4>OnePlus 10 Pro</h4>
+            <p>5291,71 kn</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer_contact">
+            <h2>Kontakt</h2>
+            <span>Mobitel:095-000-000</span>
+            <span>Email:kontakt526@gmail.com</span>
+            <small>&copy; 2022 Ivan Vidić Sva prava pridržana</small>
         </div>
         
-          
-
-
-    </section>
+        <form class="footer_form" action="">
+            <h2>Newsletter</h2>
+            <input type="text" name="name" class="formStyle" placeholder="Ime (required)" required />
+            <input type="email" name="email" class="formStyle" placeholder="Email (required)" required />
+            <button class="form-button">Subscribe</button>
+          </form>
+    </footer>
     
+    <script src="https://kit.fontawesome.com/19394dbb71.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
