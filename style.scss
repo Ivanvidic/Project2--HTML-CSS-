@@ -9,13 +9,18 @@ p {
 
 // Header
 
+.sticky {
+  position: fixed;
+  width: 100%;
+}
+
 .header {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: aliceblue;
-  box-shadow: 0 4px 4px lightgrey;
+  box-shadow: 4px 4px 4px lightgrey;
 
   span {
     font-weight: bold;
@@ -56,7 +61,7 @@ p {
 .banner-img {
   width: 100%;
   height: 500px;
-  margin-top: 6px;
+  margin-top: 105px;
 }
 
 .specs-heading {
@@ -190,5 +195,188 @@ p {
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+}
+
+// Responsive
+
+@media all and (max-width: 400px) {
+  body {
+    width: 400px;
+  }
+
+  .sticky {
+    display: flex;
+    width: 400px;
+    position: fixed;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: center;
+    height: 60px;
+
+    &_logo img {
+      width: 130px;
+    }
+
+    &_navigation {
+      display: none;
+      
+    }
+
+    span {
+      display: none;
+    }
+
+    
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+  }
+
+  .specs-heading {
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    border-top: 3px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: aliceblue;
+  }
+
+  .specifications {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    &_item {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      border: 2px solid lightgrey;
+      border-radius: 40px;
+      padding: 10px;
+      background-color: aliceblue;
+    }
+  
+    &_item img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    &_item span {
+      font-size: 12px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+  }
+
+  .similar-heading {
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    border-top: 3px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+    padding-top: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0px;
+    background-color: aliceblue;
+  }
+
+  .similar {
+    display: flex;
+    flex-direction: row;
+    row-gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  
+    &_item {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      border-left: 3px solid lightgrey;
+      border-right: 3px solid lightgrey;
+      width: 480px;
+    }
+  
+    &_item img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    &_item h4 {
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+
+    &_item p {
+      font-size: 10px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    border-top: 3px solid lightgrey;
+    h2 {
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  
+    input {
+      width: 100px;
+      height: 20px;
+    }
+  
+    button {
+      width: 110px;
+      height: 30px;
+      border-radius: 10px;
+      background-color: black;
+      color: white;
+    }
+  
+    &_contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      margin-left: 10px;
+      gap: 10px;
+      font-size: 15px;
+
+    }
+  
+    &_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+      margin-right: 10px;
+    }
   }
 }
